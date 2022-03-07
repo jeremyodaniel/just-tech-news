@@ -25,7 +25,7 @@ router.post('/', (req, res) => {
   });
 });
 
-// DELETE comment 
+// DELETE comment /api/comments/"id"
 router.delete('/:id', (req, res) => {
   Comment.destroy({
     where: {
